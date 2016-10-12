@@ -1,7 +1,7 @@
 /**
  * Live Variables module handles registering and fetching variables
  */
-var _ = require('./lodash');
+var __ = require('./lodash');
 var enums = require('./enums');
 var nativeMixin = require('./native_mixin');
 
@@ -172,7 +172,7 @@ function retrieveVariableValue(variableKey, variableType, successCallback, error
   });
 }
 
-module.exports = _.mixin(
+module.exports = __.mixin(
   liveVariables,
   nativeMixin
 );

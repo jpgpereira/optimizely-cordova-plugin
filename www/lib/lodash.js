@@ -3817,10 +3817,10 @@
       (freeModule.exports = lodash)._ = lodash;
     }
     // Export for CommonJS support.
-    freeExports._ = lodash;
+    freeExports.__ = lodash;
   }
   else {
     // Export to the global object.
-    root._ = lodash;
+    root.__ = lodash;
   }
 }.call(this));

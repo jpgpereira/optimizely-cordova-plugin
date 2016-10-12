@@ -1,7 +1,7 @@
 /**
  * Goal Tracking module handles tracking custom events and revenue events
  */
-var _ = require('./lodash');
+var __ = require('./lodash');
 var nativeMixin = require('./native_mixin');
 
 var goalTracking = {
@@ -52,7 +52,7 @@ var goalTracking = {
   },
 };
 
-module.exports = _.mixin(
+module.exports = __.mixin(
   goalTracking,
   nativeMixin
 );

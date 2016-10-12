@@ -1,11 +1,11 @@
 /*global cordova, module*/
-var _ = require('./lodash');
+var __ = require('./lodash');
 var codeBlocks = require('./code_blocks');
 var goalTracking = require('./goal_tracking');
 var liveVariables = require('./live_variables');
 var nativeMixin = require('./native_mixin');
 
-var optimizely = _.mixin({
+var optimizely = __.mixin({
   /**
    * Enables the SDK to connect to the web editor
    * Must be called before <startOptimizely>
@@ -74,7 +74,7 @@ var optimizely = _.mixin({
   },
 }, nativeMixin);
 
-module.exports = _.extend(
+module.exports = __.extend(
   {},
   optimizely,
   codeBlocks,

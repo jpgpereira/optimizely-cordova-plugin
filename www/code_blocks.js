@@ -1,7 +1,7 @@
 /**
  * Code Blocks module handles registering and executing code blocks
  */
-var _ = require('./lodash');
+var __ = require('./lodash');
 var nativeMixin = require('./native_mixin');
 
 var codeBlocks = {
@@ -42,7 +42,7 @@ var codeBlocks = {
   },
 };
 
-module.exports = _.mixin(
+module.exports = __.mixin(
   codeBlocks,
   nativeMixin
 );
