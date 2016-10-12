@@ -3800,7 +3800,7 @@
   // Expose lodash on the free variable `window` or `self` when available. This
   // prevents errors in cases where lodash is loaded by a script tag in the presence
   // of an AMD loader. See http://requirejs.org/docs/errors.html#mismatch for more details.
-  (freeWindow || freeSelf || {})._ = lodash;
+  (freeWindow || freeSelf || {}).__ = lodash;
 
   // Some AMD build optimizers like r.js check for condition patterns like the following:
   if (typeof define == 'function' && typeof define.amd == 'object' && define.amd) {
